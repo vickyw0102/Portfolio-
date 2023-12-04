@@ -121,6 +121,7 @@ h2 {
     'work SurfReport SurfReport'
     'work LedWall Calculator'
     'work PastelPizzels RunBuddy'
+    'contact phoneno email'
   }
 
 .work{
@@ -197,22 +198,5 @@ h4 {
   margin-bottom: 20px;
 }
 
-
-.contact {
-  display:grid;
-  background-color:rgb(248, 248, 248);
-  
-}
-.contact> h3{
-  position:grid;
-  left:0px;
-  right:130px;
-  height:5cm;
-  line-height: 50px;
-  padding:50px 50px;
-  border-right: 5px solid rgb(97, 96, 96) ;
-  margin: 15px;
-  font-size: 50px;
-}
 
 
