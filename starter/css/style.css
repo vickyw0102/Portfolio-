@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  padding: 0px;
+  margin:0px;
+  
 }
 
 body {
@@ -9,8 +12,63 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
+header {
+  background-color: rgb(97, 96, 96);
+  height:100px;
+  width:100%;
+  padding:30px 0px;
+  margin:0px;
+  
+}
+h1 {
+  position:absolute;
+  left:50px;
+  top: 10px;
+  line-height: 50px;
+  padding:10px;
+  background-color: aqua;
+  border-radius: 5px;
+}
+header a {
+  color:white;
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header li{
+  display:inline;
+  margin-right: 4vw;
+  
+}
+header ul{
+  position:absolute;
+  right:5vw;
+  top:0;
+  line-height: 80px;
+  font-size:24px;
+}
+h2 {
+  position:absolute;
+  right:200px;
+  top: 200px;
+  line-height: 50px;
+  padding:10px;
+  background-color: aqua;
+  border-radius: 5px;
+}
+.hero-banner {
+  height:200px;
+  width:100%;margin-bootm:25px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  line-height: 80px;
+  font-size:24px;
+}
+
+
+}
 h3,
 h4,
 h5,
