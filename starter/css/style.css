@@ -21,6 +21,9 @@ header {
   margin:0px;
   
 }
+.meau{
+  display:none;
+}
 h1 {
   position:absolute;
   left:50px;
@@ -108,7 +111,7 @@ h2 {
   
   height:20cm;
   line-height: 50px;
-  padding:50px 85px;
+  padding:50px 75px;
   border-right: 5px solid rgb(97, 96, 96) ;
   margin: 15px;
   font-size: 50px;
@@ -137,22 +140,23 @@ h2 {
   width:100%;
   max-height: 500px;
   border: 5px solid rgb(42, 179, 179,0.5);
-  margin-bottom: 10px;
-  padding-top: 30%;
-  left:5px;
+  margin: 20px 0px 10px 0px;
+  padding-top: 50px;
+  left:0px;
   
 }
-.surfReport > h4 {
+.h4 {
   position:absolute;
-  left:100px;
+  left:80px;
+  top:150px;
   line-height: 50px;
-  padding:10px;
-  background-color: rgb(42, 179, 179,0.5);
-  background-color:cover;
+  padding:50px;
+  background-color: rgb(42, 179, 179,1);
+  font-size:50px;
   color:rgb(7, 7, 97);
-  font-size:40px;
- 
+
 }
+
 
   h4 >p{
     font-size:20px;  
@@ -202,31 +206,106 @@ h2 {
 }
 
 
-.contact {
-  background-color:white;
-  display:flex;
-  flex-direction: row;
-
-  
+.contact-grid {
+  display: grid;
+  width:100%;
+  grid-template-columns: 25% 75% ;
+  grid-template-areas: 
+    'Contactme contactinfo contactinfo';
+    
+    
+    
 }
 
-.contact > h3{
-  position:grid;
+.Contactme > h3{
+  grid-area: contact;
   left:50px;
-  right:100px;
+  right:50px;
   line-height: 50px;
   padding:50px;
-  background-color: none;
   border-right: 5px solid rgb(97, 96, 96) ;
   margin: 30px;
   font-size: 50px;
 
 }
-.contact > ul{
+
+.contactinfo >ul> li{
+  grid-area: contactinfo;
+  padding:50px;
   
-  padding: 100px;
-  width:100%;
-  display:inline;
-  flex-direction: row;
-  align-content: end;
+  top:200px;
+  display: inline;
+  justify-content: space-evenly;
+  justify-items: end;
+  font-size: 20px;
+
 }
+
+@media screen and (max-width: 768px){
+  header ul {
+    display:none;
+  }
+  header h1 {
+    left:50%;
+    transform: translateX(-50%);
+  }
+  h2{
+    font-size:40px;
+  }
+  .menu {
+    display: block;
+    background-color: transparent;
+    color:white;
+    font-size:35px;
+    position:absolute;
+    top:15px;
+    left:20px;
+    border:none;
+    cursor: pointer;
+
+  }
+  .work{
+    display:none;
+  }
+  .SurfReport {
+    flex-direction:column;
+    
+  }
+  img {max-height: 500px;}
+  
+  .LedWall {
+    flex-direction:column;
+  }
+  .Calculator {
+    flex-direction:column;
+  }
+  .PastelPizzels{
+    flex-direction:column;
+  }
+  .RunBuddy {
+    flex-direction:column;
+  }
+
+
+  .Contactme{
+    display:none;
+  }
+  .contactinfo>li{
+    display:column;
+  
+  }
+  h3{
+    flex-direction: column;
+  }
+  h4{
+    flex-direction: column;
+  }
+  .container-grid{
+    flex-direction:column;
+  }
+ 
+
+
+
+}
+  
