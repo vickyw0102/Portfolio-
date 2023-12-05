@@ -21,7 +21,7 @@ header {
   margin:0px;
   
 }
-.meau{
+.menu{
   display:none;
 }
 h1 {
@@ -264,15 +264,18 @@ h2 {
     cursor: pointer;
 
   }
-  .work{
-    display:none;
+  .work>h3{
+    flex-direction: column;
+    font-size:30px;
+    border:none;
+    padding:5px;
   }
   .SurfReport {
     flex-direction:column;
     
   }
   img {max-height: 500px;}
-  
+
   .LedWall {
     flex-direction:column;
   }
@@ -287,22 +290,33 @@ h2 {
   }
 
 
-  .Contactme{
-    display:none;
+  .Contactme>h3{
+    flex-direction: column;
+    font-size:30px;
+    border:none;
+    padding:5px;
   }
-  .contactinfo>li{
-    display:column;
+  .contactinfo>ul{
+    display:flex;
+    flex-direction: column;
+    height:10cm;
+    font-size: 5px;
   
   }
-  h3{
+  .about>h3{
     flex-direction: column;
+    font-size:30px;
   }
-  h4{
+  .about > h3 >p{
     flex-direction: column;
+    font-size:10px;
   }
-  .container-grid{
-    flex-direction:column;
+  .container-grid> h4{
+    flex-direction: column;
+    font-size:20px;
+    width:100%;
   }
+  
  
 
 
