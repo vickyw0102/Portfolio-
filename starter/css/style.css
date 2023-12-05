@@ -290,11 +290,24 @@ h2 {
     border:none;
     padding:5px;
   }
+  .container-grid {
+    display: grid;
+    width:100%;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: 
+      'work SurfReport'
+      'work SurfReport'
+      'work LedWall'
+      'work Calculator'
+      'work PastelPizzels' 
+      'work RunBuddy'
+      
+    }
   .SurfReport {
     flex-direction:column;
     
   }
-  img {max-height: 500px;}
+  img {max-height: 1000px;}
 
   .LedWall {
     flex-direction:column;
