@@ -157,10 +157,12 @@ h2 {
 
 }
 
-
-  h4 >p{
-    font-size:20px;  
-  }
+.SurfReport> h4 {
+  position: relative;
+  top:70%;
+  background-color: aquamarine;
+  width:30%;
+}
 
 .LedWall {
   grid-area:LedWall;
@@ -173,6 +175,12 @@ h2 {
   
   
 }
+.LedWall> h4 {
+  position: relative;
+  top:50px;
+  background-color: aquamarine;
+  width:30%;
+}
 .Calculator {
   grid-area:Calculator;
   background-image: url(../images/02-portfolio-2.jpg);
@@ -184,6 +192,12 @@ h2 {
   margin-left:10px;
 
 }
+.Calculator> h4 {
+  position: relative;
+  top:50px;
+  background-color: aquamarine;
+  width:40%;
+}
 .PastelPizzels {
   grid-area:PastelPizzels;
   background-image: url(../images/02-portfolio-3.jpg);
@@ -192,6 +206,12 @@ h2 {
   max-height: 200px;
   border: 5px solid rgb(42, 179, 179,0.5);
   margin-bottom: 20px;
+}
+.PastelPizzels> h4 {
+  position: relative;
+  top:50px;
+  background-color: aquamarine;
+  width:30%;
 }
 .RunBuddy {
   grid-area:RunBuddy;
@@ -205,7 +225,12 @@ h2 {
   margin-bottom: 20px;
 }
 
-
+.RunBuddy> h4 {
+  position: relative;
+  top:50px;
+  background-color: aquamarine;
+  width:30%;
+}
 .contact-grid {
   display: grid;
   width:100%;
@@ -229,16 +254,14 @@ h2 {
 
 }
 
-.contactinfo >ul> li{
+.contactinfo >ul>li{
   grid-area: contactinfo;
   padding:50px;
-  
-  top:200px;
+  top:50%;
   display: inline;
   justify-content: space-evenly;
   justify-items: end;
   font-size: 20px;
-
 }
 
 @media screen and (max-width: 768px){
